@@ -1,0 +1,38 @@
+header {
+    height: 70px;
+}
+.wrapper {
+    margin-top: 70px;
+    overflow: hidden;
+    height: calc(100vh - 70px);
+ }
+
+#sidebar {
+    height: 100%;
+    width: 130px;
+    flex-shrink: 0;
+    background-color: #051e34;
+    background-image: url("/img/sidebar-bg.png");
+
+}
+
+main {
+    flex-grow: 1;
+    overflow-y: auto;
+    height: 100%;
+}
+
+.cerchio {
+    width: 30px;
+    height: 30px;
+    border-radius: 50px;
+    color: white;
+    background-color: orangered;
+    text-align: center;
+    padding-top: 7px;
+}
+
+.bordo {
+    border: 1px solid grey;
+    padding: 5px 7px;
+}
