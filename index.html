@@ -34,13 +34,13 @@
                     <div class=" dropdown d-lg-flex">
                         <button type="button" class="border-0 bg-transparent dropdown-toggle-split"
                             data-bs-toggle="dropdown" aria-expanded="false">
-                            <span> <i class="fs-5 fa-solid fa-bell"></i></span>
+                            <span> <i class="orange fs-5 fa-solid fa-bell"></i></span>
                         </button>
 
                         <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="#">Profilo</a></li>
-                            <li><a class="dropdown-item" href="#">Fatturazione</a></li>
-                            <li><a class="dropdown-item" href="#">Logout</a></li>
+                            <li><a class="orange dropdown-item" href="#">Profilo</a></li>
+                            <li><a class="orange dropdown-item" href="#">Fatturazione</a></li>
+                            <li><a class="orange dropdown-item" href="#">Logout</a></li>
                         </ul>
                     </div>
                 </div>
@@ -92,86 +92,7 @@
                                             data-bs-target="#offcanvas" aria-controls="offcanvas">
                                             <i class="fa-solid fa-plus"></i>
                                         </button>
-                                        <div class="offcanvas offcanvas-end w-50 small" tabindex="-1" id="offcanvas" aria-labelledby="offcanvas">
-                                            <div class="offcanvas-header">
-                                                <h5 class="offcanvas-title" id="offcanvas2">Inserisci un nuovo studente
-                                                </h5>
-                                                <button type="button" class="btn-close" data-bs-dismiss="offcanvas"
-                                                    aria-label="Close"></button>
-                                            </div>
-                                            <div class="offcanvas-body">
-                                                <div class="container-fluid">
-                                                    <div class="row">
-                                                        <form class="row g-2">
-                                                            <div class="col-md-6">
-                                                              <label for="input-Name" class="form-label">Name</label>
-                                                              <input type="text" class="form-control" id="input-Name">
-                                                              <h5 class="fw-normal mt-1">Email</h5>
-                                                              <label class="visually-hidden" for="autoSizingInputGroup">email</label>
-                                                                <div class="input-group">
-                                                                  <div class="input-group-text">@</div>
-                                                                  <input type="text" class="form-control" id="autoSizingInputGroup">
-                                                                </div>
-                                                                <h5 class="fw-normal mt-1">Iindirizzo Email</h5>
-                                                                <label class="visually-hidden" for="autoSizingInputGroup">email</label>
-                                                                  <div class="input-group">
-                                                                    <div class="input-group-text">@</div>
-                                                                    <input type="text" class="form-control" id="autoSizingInputGroup">
-                                                                  </div>
-                                                            </div>
-                                                             <div class="col-md-6">
-                                                              <label for="input-Cognome" class="form-label">Cognome</label>
-                                                              <input type="text" class="form-control" id="inputPassword4">
-                                                              <label for="input-Password" class="form-label">Password</label>
-                                                              <input type="text" class="form-control" id="inputPassword4">
-                                                              <label for="input-Password" class="form-label">Password</label>
-                                                              <input type="text" class="form-control" id="inputPassword4">
-                                                            </div>
-                                                            <div class="col-12">
-                                                              <label for="inputAddress" class="form-label">Indirizzo</label>
-                                                              <input type="text" class="form-control" id="inputAddress">
-                                                            </div>
-                                                            <div class="col-md-6">
-                                                              <label for="inputCity" class="form-label">Città</label>
-                                                              <input type="text" class="form-control" id="inputCity">
-                                                            </div>
-                                                            <div class="col-md-4">
-                                                              <label for="inputState" class="form-label">Stato</label>
-                                                              <select id="inputState" class="form-select">
-                                                                <option selected>Scegli...</option>
-                                                                <option>...</option>
-                                                              </select>
-                                                            </div>
-                                                            <div class="col-md-2">
-                                                              <label for="inputZip" class="form-label">Cap</label>
-                                                              <input type="text" class="form-control" id="inputZip">
-                                                            </div>
-                                                            <div class="col-12">
-                                                                <h5 class="fw-normal mt-1">Foto</h5>
-                                                                <label class="visually-hidden" for="autoSizingInputGroup">Nessun file Selezionato</label>
-                                                                  <div class="input-group">
-                                                                    <div class="input-group-text">Scegli file</div>
-                                                                    <input type="text" class="form-control" id="autoSizingInputGroup" placeholder="nessun file selezionato">
-                                                                  </div>
-                                                              </div>
-                                                            <div class="col-12">
-                                                              <div class="form-check">
-                                                                <input class="form-check-input" type="checkbox" id="gridCheck">
-                                                                <label class="form-check-label" for="gridCheck">
-                                                                  Seleziona per proseguire
-                                                                </label>
-                                                              </div>
-                                                            </div>
-                                                            <div class="col-12">
-                                                              <button type="submit" class="btn btn-primary">Salva</button>
-                                                              <button type="submit" class="btn btn-warning">Svuota</button>
-                                                            </div>
-                                                          </form>
-
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
+                                        
                                     </div>
                                 </div>
                                 <div class="pt-4 pt-md-3 order-md-0 col-md-4 col-lg-5">
@@ -224,8 +145,8 @@
                                 <thead>
                                     <tr class="text-center">
                                         <th scope="col" class="text-start">Nome</th>
-                                        <td scope="col">Data inizio</td>
-                                        <td scope="col">ROI</td>
+                                        <td scope="col" class="d-none none d-md-table-cell">Data inizio</td>
+                                        <td scope="col" class="d-none none d-md-table-cell">ROI</td>
                                         <td scope="col">Stato</td>
                                         <td scope="col">Azioni</td>
                                     </tr>
@@ -238,8 +159,8 @@
                                             <span class="ms-2">classe 75</span>
 
                                         </th>
-                                        <td>15 feb 2021</td>
-                                        <td>20%</td>
+                                        <td class="d-none none d-md-table-cell">15 feb 2021</td>
+                                        <td class="d-none none d-md-table-cell">20%</td>
                                         <td>
                                             <p class="badge text-bg-success">Done</p>
                                         </td>
@@ -258,8 +179,8 @@
                                             <span class="ms-2">classe 76</span>
 
                                         </th>
-                                        <td>16 feb 2021</td>
-                                        <td>20%</td>
+                                        <td class="d-none none d-md-table-cell">16 feb 2021</td>
+                                        <td class="d-none none d-md-table-cell">20%</td>
                                         <td>
                                             <p class="badge text-bg-success">Done</p>
                                         </td>
@@ -278,8 +199,8 @@
                                             <span class="ms-2">classe 77</span>
 
                                         </th>
-                                        <td>17 feb 2021</td>
-                                        <td>20%</td>
+                                        <td class="d-none none d-md-table-cell">17 feb 2021</td>
+                                        <td class="d-none none d-md-table-cell">20%</td>
                                         <td>
                                             <p class="badge text-bg-warning text-white">process</p>
                                         </td>
@@ -298,8 +219,8 @@
                                             <span class="ms-2">classe 78</span>
 
                                         </th>
-                                        <td>18 feb 2021</td>
-                                        <td>20%</td>
+                                        <td class="d-none none d-md-table-cell">18 feb 2021</td>
+                                        <td class="d-none none d-md-table-cell">20%</td>
                                         <td>
                                             <p class="badge text-bg-success">Done</p>
                                         </td>
@@ -318,8 +239,8 @@
                                             <span class="ms-2">classe 79</span>
 
                                         </th>
-                                        <td>19 feb 2021</td>
-                                        <td>20%</td>
+                                        <td class="d-none none d-md-table-cell">19 feb 2021</td>
+                                        <td class="d-none none d-md-table-cell">20%</td>
                                         <td>
                                             <p class="badge text-bg-danger">failed</p>
                                         </td>
@@ -338,8 +259,8 @@
                                             <span class="ms-2">classe 80</span>
 
                                         </th>
-                                        <td>20 feb 2021</td>
-                                        <td>20%</td>
+                                        <td class="d-none none d-md-table-cell">20 feb 2021</td>
+                                        <td class="d-none none d-md-table-cell">20%</td>
                                         <td>
                                             <p class="badge text-bg-success">Done</p>
                                         </td>
@@ -358,8 +279,8 @@
                                             <span class="ms-2">classe 81</span>
 
                                         </th>
-                                        <td>21 feb 2021</td>
-                                        <td>20%</td>
+                                        <td class="d-none none d-md-table-cell">21 feb 2021</td>
+                                        <td class="d-none none d-md-table-cell">20%</td>
                                         <td>
                                             <p class="badge text-bg-danger">failed</p>
                                         </td>
@@ -378,8 +299,8 @@
                                             <span class="ms-2">classe 82</span>
 
                                         </th>
-                                        <td>22 feb 2021</td>
-                                        <td>20%</td>
+                                        <td class="d-none d-md-table-cell">22 feb 2021</td>
+                                        <td class="d-none none d-md-table-cell">20%</td>
                                         <td>
                                             <p class="badge text-bg-success">Done</p>
                                         </td>
@@ -410,7 +331,7 @@
                                             Come aggiungere un nuovo studente?
                                         </button>
                                     </h2>
-                                    <div id="collapseOne" class="accordion-collapse collapse show"
+                                    <div id="collapseOne" class="accordion-collapse collapse"
                                         aria-labelledby="headingOne" data-bs-parent="#accordionExample">
                                         <div class="accordion-body">
                                             Lorem ipsum dolor sit amet consectetur adipisicing elit. Error,
@@ -525,9 +446,88 @@
                 </div>
 
             </section>
-
+            
         </main>
+        <div class="offcanvas w-100 offcanvas-end half" tabindex="-1" id="offcanvas" aria-labelledby="offcanvas">
+            <div class="offcanvas-header">
+                <h5 class="offcanvas-title" id="offcanvas2">Inserisci un nuovo studente
+                </h5>
+                <button type="button" class="btn-close" data-bs-dismiss="offcanvas"
+                    aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body small">
+                <div class="container-fluid">
+                    <div class="row">
+                        <form class="row g-2">
+                            <div class="col-md-6">
+                              <label for="input-Name" class="form-label">Name</label>
+                              <input type="text" class="form-control" id="input-Name">
+                              <h5 class="fw-normal mt-1">Email</h5>
+                              <label class="visually-hidden" for="autoSizingInputGroup">email</label>
+                                <div class="input-group">
+                                  <div class="input-group-text">@</div>
+                                  <input type="text" class="form-control" id="autoSizingInputGroup">
+                                </div>
+                                <h5 class="fw-normal mt-1">Iindirizzo Email</h5>
+                                <label class="visually-hidden" for="autoSizingInputGroup">email</label>
+                                  <div class="input-group">
+                                    <div class="input-group-text">@</div>
+                                    <input type="text" class="form-control" id="autoSizingInputGroup">
+                                  </div>
+                            </div>
+                             <div class="col-md-6">
+                              <label for="input-Cognome" class="form-label">Cognome</label>
+                              <input type="text" class="form-control" id="inputPassword4">
+                              <label for="input-Password" class="form-label">Password</label>
+                              <input type="text" class="form-control" id="inputPassword4">
+                              <label for="input-Password" class="form-label">Password</label>
+                              <input type="text" class="form-control" id="inputPassword4">
+                            </div>
+                            <div class="col-12">
+                              <label for="inputAddress" class="form-label">Indirizzo</label>
+                              <input type="text" class="form-control" id="inputAddress">
+                            </div>
+                            <div class="col-md-6">
+                              <label for="inputCity" class="form-label">Città</label>
+                              <input type="text" class="form-control" id="inputCity">
+                            </div>
+                            <div class="col-md-4">
+                              <label for="inputState" class="form-label">Stato</label>
+                              <select id="inputState" class="form-select">
+                                <option selected>Scegli...</option>
+                                <option>...</option>
+                              </select>
+                            </div>
+                            <div class="col-md-2">
+                              <label for="inputZip" class="form-label">Cap</label>
+                              <input type="text" class="form-control" id="inputZip">
+                            </div>
+                            <div class="col-12">
+                                <h5 class="fw-normal mt-1">Foto</h5>
+                                <label class="visually-hidden" for="autoSizingInputGroup">Nessun file Selezionato</label>
+                                  <div class="input-group">
+                                    <div class="input-group-text">Scegli file</div>
+                                    <input type="text" class="form-control" id="autoSizingInputGroup" placeholder="nessun file selezionato">
+                                  </div>
+                              </div>
+                            <div class="col-12">
+                              <div class="form-check">
+                                <input class="form-check-input" type="checkbox" id="gridCheck">
+                                <label class="form-check-label" for="gridCheck">
+                                  Seleziona per proseguire
+                                </label>
+                              </div>
+                            </div>
+                            <div class="col-12">
+                              <button type="submit" class="btn btn-primary">Salva</button>
+                              <button type="submit" class="btn btn-warning">Svuota</button>
+                            </div>
+                          </form>
 
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
 
 
