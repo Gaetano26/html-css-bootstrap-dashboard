@@ -13,30 +13,36 @@
 </head>
 
 <body class="bg-body-tertiary">
+    <!--navbar-->
     <header class="fixed-top d-flex align-items-center">
+         <!--container navbar-->
         <nav class="bg-white container-fluid ">
+             <!--navbar-->
             <div class=" d-flex align-items-center justify-content-sm-between justify-content-lg-between ps-4 ps-lg-0">
+                 <!--loghi-->
                 <div class="dim">
                     <img class="img-fluid d-none d-lg-block" src="./img/logo.svg" alt="logo">
                     <img class="img-fluid log d-lg-none" src="./img/mobile-logo.png" alt="logo">
                 </div>
+                 <!--input form-control-->
                 <div class="dim2">
                     <input class="form-control" type="search" placeholder="Prova a cercare: Lezioni di Laravel"
                         aria-label="Search">
                 </div>
+                 <!--icone-->
                 <div class="dim d-flex justify-content-center align-items-center">
                     <div class="d-none d-flex gap-3 d-lg-flex ps-5">
                         <i class=" fs-5 fa-solid fa-list"></i>
                         <i class=" fs-5 fa-solid fa-circle-question"></i>
                         <i class=" fs-5 fa-solid fa-ellipsis-vertical"></i>
                     </div>
-
+                      <!--button dropdown-->
                     <div class=" dropdown d-lg-flex">
                         <button type="button" class="border-0 bg-transparent dropdown-toggle-split"
                             data-bs-toggle="dropdown" aria-expanded="false">
                             <span> <i class="orange fs-5 fa-solid fa-bell"></i></span>
                         </button>
-
+                         <!--menu dropdown-->
                         <ul class="dropdown-menu">
                             <li><a class="orange dropdown-item" href="#">Profilo</a></li>
                             <li><a class="orange dropdown-item" href="#">Fatturazione</a></li>
@@ -45,12 +51,18 @@
                     </div>
                 </div>
             </div>
+             <!--fine navbar-->
         </nav>
+         <!--fine container navbar-->
     </header>
+     <!--wrapper-->
     <div class="wrapper d-flex">
+         <!--sidebar-->
         <nav id="sidebar" class="text-white">
+             <!--container sidebar-->
             <div class="container-fluid h-100 pt-4 d-flex flex-column gap-3">
                 <div class="gap-3  mt-auto small">
+                     <!--ul sidebar + icone-->
                     <ul class="list-unstyled w-100 d-flex flex-column gap-2">
                         <li class="d-flex justify-content-center align-items-center py-2">
                             <i class="fa-solid fa-house"></i>
@@ -65,6 +77,7 @@
                             <span class="d-none d-lg-block ms-2">Signals</span>
                         </li>
                     </ul>
+                     <!--fine ul sidebar-->
                 </div>
                 <div class="d-flex flex-column gap-3 align-items-center justify-content-end flex-grow-1 small">
                     <ul class="list-unstyled w-100">
@@ -76,14 +89,20 @@
                 </div>
 
             </div>
+             <!--fine container-->
         </nav>
+         <!--fine sidebar-->
 
 
         <main>
+             <!--aside-->
             <div class="aside bg-primary text-white">
+                 <!--container aside-->
                 <div class="container-fluid">
+                     <!--row + col-->
                     <div class="row w-100 pb-md-2 pb-lg-1">
                         <div class="col-12">
+                             <!--Sezione nuovo studente + offcanvas-->
                             <div class="row justify-content-lg-between align-items-start">
                                 <div class="pt-4 pt-md-3 fs-4 align-items-center gap-4 order-md-2 col-12 col-md-3 col-lg-3">
                                     <div class="d-flex align-items-center gap-3 small text-nowrap">
@@ -95,6 +114,7 @@
                                         
                                     </div>
                                 </div>
+                                 <!--sezione Boolean + pills-->
                                 <div class="pt-4 pt-md-3 order-md-0 col-md-4 col-lg-5">
 
                                             <h1>Boolean<span
@@ -117,6 +137,7 @@
                                                 blog app</span>
                                     
                                 </div>
+                                 <!--sezione studenti online-->
                                 <div class="py-3 py-md-3 pt-md-3 order-md-1 col-md-4 col-lg-4">
                                             <div>
                                                 <p>Studenti online negli ultimi 30 minuti</p>
@@ -131,16 +152,22 @@
 
                         </div>
                     </div>
+                     <!--fine row + col-->
                 </div>
+                 <!--fine container-->
             </div>
-            <section class="contaiber-fluid py-4">
+             <!--fine aside-->
+              <!--container main-content-->
+            <section class="container-fluid py-4">
+                 <!--row + col-->
                 <div class="row">
                     <div class="col-12 col-lg-8">
+                         <!--card Prossime Classi-->
                         <div class="card">
                             <div class="card-header">
                                 <h3>Prossime classi</h3>
                             </div>
-
+                             <!--table-->
                             <table class="table table-hover small text-nowrap">
                                 <thead>
                                     <tr class="text-center">
@@ -316,12 +343,15 @@
 
                                 </tbody>
                             </table>
+                             <!--fine table-->
                         </div>
+                         <!--fine card-->
+                          <!--card F.A.Q-->
                         <div class="card mt-4">
                             <div class="card-header">
                                 <h3>F.A.Q</h3>
                             </div>
-
+                              <!--Accordion-->
                             <div class="accordion small" id="accordionExample">
                                 <div class="accordion-item">
                                     <h2 class="accordion-header" id="headingOne">
@@ -371,15 +401,20 @@
                                     </div>
                                 </div>
                             </div>
+                             <!--Fine Accordion-->
 
                         </div>
+                         <!--fine card-->
                     </div>
+                     <!--col-->
                     <div class="col-12 col-lg-4 g-0">
+                         <!--card Todo-->
                         <div class="card small">
                             <div class="card-header">
                                 <h3>Todo</h3>
                             </div>
                             <div class="card-body">
+                                 <!--ul card Todo-->
                                 <ul class="list-group">
                                     <li class="list-group-item">
                                         <div class="form-check">
@@ -409,10 +444,14 @@
                                         </div>
                                     </li>
                                 </ul>
+                                 <!--fine ul-->
                             </div>
                         </div>
+                         <!--fine card-->
+                          <!--card utenti attivi-->
                         <div class="card mt-4">
                             <div class="card-body">
+                                 <!--ul card utenti attivi-->
                                 <ul class="list-group">
                                     <li class="list-group-item mt-2">
                                         <img class="img-fluid" aria-hidden="true" src="./img/stats.jpeg" alt="stats">
@@ -434,9 +473,11 @@
                                         <a href="#">Visualizza report approfondito</a>
                                     </li>
                                 </ul>
+                                 <!--fine ul-->
 
                             </div>
                         </div>
+                         <!--fine card-->
 
 
 
@@ -448,33 +489,39 @@
             </section>
             
         </main>
+         <!--contenuto offcanvas esterno per dimensionarlo su tutta la pagina-->
         <div class="offcanvas w-100 offcanvas-end half" tabindex="-1" id="offcanvas" aria-labelledby="offcanvas">
+             <!--titolo-->
             <div class="offcanvas-header">
                 <h5 class="offcanvas-title" id="offcanvas2">Inserisci un nuovo studente
                 </h5>
                 <button type="button" class="btn-close" data-bs-dismiss="offcanvas"
                     aria-label="Close"></button>
             </div>
+             <!--contenuto-->
             <div class="offcanvas-body small">
+                 <!--container-->
                 <div class="container-fluid">
                     <div class="row">
-                        <form class="row g-2">
+                         <!--colonna sinistra-->
+                        <form class="row g-2 small">
                             <div class="col-md-6">
                               <label for="input-Name" class="form-label">Name</label>
                               <input type="text" class="form-control" id="input-Name">
-                              <h5 class="fw-normal mt-1">Email</h5>
-                              <label class="visually-hidden" for="autoSizingInputGroup">email</label>
+                              <h5 class="fw-normal mt-1 small">Email</h5>
+                              <label class="visually-hidden small" for="autoSizingInputGroup">email</label>
                                 <div class="input-group">
                                   <div class="input-group-text">@</div>
                                   <input type="text" class="form-control" id="autoSizingInputGroup">
                                 </div>
-                                <h5 class="fw-normal mt-1">Iindirizzo Email</h5>
+                                <h5 class="fw-normal mt-1 small">indirizzo Email</h5>
                                 <label class="visually-hidden" for="autoSizingInputGroup">email</label>
                                   <div class="input-group">
                                     <div class="input-group-text">@</div>
                                     <input type="text" class="form-control" id="autoSizingInputGroup">
                                   </div>
                             </div>
+                             <!--colonna destra-->
                              <div class="col-md-6">
                               <label for="input-Cognome" class="form-label">Cognome</label>
                               <input type="text" class="form-control" id="inputPassword4">
@@ -483,14 +530,17 @@
                               <label for="input-Password" class="form-label">Password</label>
                               <input type="text" class="form-control" id="inputPassword4">
                             </div>
+                             <!--indirizzo-->
                             <div class="col-12">
                               <label for="inputAddress" class="form-label">Indirizzo</label>
                               <input type="text" class="form-control" id="inputAddress">
                             </div>
+                             <!--città-->
                             <div class="col-md-6">
                               <label for="inputCity" class="form-label">Città</label>
                               <input type="text" class="form-control" id="inputCity">
                             </div>
+                            <!--stato-->
                             <div class="col-md-4">
                               <label for="inputState" class="form-label">Stato</label>
                               <select id="inputState" class="form-select">
@@ -498,18 +548,21 @@
                                 <option>...</option>
                               </select>
                             </div>
+                            <!--CAP-->
                             <div class="col-md-2">
                               <label for="inputZip" class="form-label">Cap</label>
                               <input type="text" class="form-control" id="inputZip">
                             </div>
+                            <!--Foto-->
                             <div class="col-12">
-                                <h5 class="fw-normal mt-1">Foto</h5>
+                                <h5 class="mt-1 small">Foto</h5>
                                 <label class="visually-hidden" for="autoSizingInputGroup">Nessun file Selezionato</label>
-                                  <div class="input-group">
+                                <div class="input-group">
                                     <div class="input-group-text">Scegli file</div>
                                     <input type="text" class="form-control" id="autoSizingInputGroup" placeholder="nessun file selezionato">
-                                  </div>
-                              </div>
+                                </div>
+                            </div>
+                            <!--seleziona per proseguire-->
                             <div class="col-12">
                               <div class="form-check">
                                 <input class="form-check-input" type="checkbox" id="gridCheck">
@@ -518,16 +571,19 @@
                                 </label>
                               </div>
                             </div>
+                            <!--bottoni-->
                             <div class="col-12">
                               <button type="submit" class="btn btn-primary">Salva</button>
                               <button type="submit" class="btn btn-warning">Svuota</button>
                             </div>
                           </form>
+                          <!--fine form-->
 
                     </div>
                 </div>
             </div>
         </div>
+        <!--fine offcanvas-->
     </div>
 
 
