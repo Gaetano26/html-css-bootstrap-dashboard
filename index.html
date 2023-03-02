@@ -14,22 +14,124 @@
 
 <body class="bg-body-tertiary">
     <header class="fixed-top d-flex align-items-center">
-        <nav class="bg-white">
-            header
+        <nav class="bg-white container-fluid ">
+            <div class=" d-flex align-items-center justify-content-sm-between justify-content-lg-between ps-4 ps-lg-0">
+                <div class="dim">
+                    <img class="img-fluid d-none d-lg-block" src="./img/logo.svg" alt="logo">
+                    <img class="img-fluid log d-lg-none" src="./img/mobile-logo.png" alt="logo">
+                </div>
+                <div class="dim2">
+                    <input class="form-control" type="search" placeholder="Prova a cercare: Lezioni di Laravel"
+                        aria-label="Search">
+                </div>
+                <div class="dim d-flex justify-content-center align-items-center">
+                    <div class="d-none d-flex gap-3 d-lg-flex ps-5">
+                        <i class=" fs-5 fa-solid fa-list"></i>
+                        <i class=" fs-5 fa-solid fa-circle-question"></i>
+                        <i class=" fs-5 fa-solid fa-ellipsis-vertical"></i>
+                    </div>
+
+                    <div class=" dropdown d-lg-flex">
+                        <button type="button" class="border-0 bg-transparent dropdown-toggle-split"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            <span> <i class="fs-5 fa-solid fa-bell"></i></span>
+                        </button>
+
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Profilo</a></li>
+                            <li><a class="dropdown-item" href="#">Fatturazione</a></li>
+                            <li><a class="dropdown-item" href="#">Logout</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
         </nav>
     </header>
-
     <div class="wrapper d-flex">
         <nav id="sidebar" class="text-white">
-            sidebar
+            <div class="container-fluid h-100 pt-4 d-flex flex-column gap-3">
+                <div class="gap-3  mt-auto small">
+                    <ul class="list-unstyled w-100 d-flex flex-column gap-2">
+                        <li class="d-flex justify-content-center align-items-center py-2">
+                            <i class="fa-solid fa-house"></i>
+                            <span class="d-none d-lg-block ms-2">Home</span>
+                        </li>
+                        <li class="d-flex justify-content-center align-items-center py-2">
+                            <i class="fa-solid fa-chart-simple"></i>
+                            <span class="d-none d-lg-block ms-2">Stats</span>
+                        </li>
+                        <li class="d-flex justify-content-center align-items-center py-2">
+                            <i class="fa-solid fa-signal"></i>
+                            <span class="d-none d-lg-block ms-2">Signals</span>
+                        </li>
+                    </ul>
+                </div>
+                <div class="d-flex flex-column gap-3 align-items-center justify-content-end flex-grow-1 small">
+                    <ul class="list-unstyled w-100">
+                        <li class="d-flex justify-content-center align-items-center py-2">
+                            <i class="fa-solid fa-gear"></i>
+                            <span class="d-none d-lg-block ms-2">Admin</span>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
         </nav>
+
+
         <main>
             <div class="aside bg-primary text-white">
                 <div class="container-fluid">
-                    ciao
+                    <div class="row w-100 pb-md-2 pb-lg-1">
+                        <div class="col-12">
+                            <div class="row justify-content-lg-between align-items-start">
+                                <div
+                                     class="pt-4 pt-md-3 fs-4 align-items-center gap-4 order-md-2 col-12 col-md-3 col-lg-3">
+                                    <div class="d-flex align-items-center gap-3 small">
+                                        <p class="small m-0 new-student">Nuovo Studente</p>
+                                        <button class="btn btn-lg btn-outline-light" data-bs-toggle="offcanvas"
+                                                data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">
+                                            <i class="fa-solid fa-plus"></i>
+                                        </button>
+                                    </div>
+
+                                </div>
+                                <div class="pt-4 pt-md-3 order-md-0 col-md-4 col-lg-5">
+
+                                    <h1>Boolean<span class="badge rounded-pill piccolo text-bg-dark bg-opacity-25">Piano
+                                            blaze</span></h1>
+                                    <span class="badge rounded-pill text-bg-dark small bg-opacity-25">3 app</span>
+                                    <i class="fa-solid fa-angles-right"></i>
+                                    <span class="badge rounded-pill text-bg-dark small bg-opacity-25 d-lg-none">
+                                        <i class="fa-solid fa-plus"></i>
+                                    </span>
+                                    <span
+                                          class="badge rounded-pill small text-bg-dark bg-opacity-25 d-none d-xl-inline">Boolean
+                                        mobile app</span>
+                                    <span
+                                          class="badge small rounded-pill text-bg-dark bg-opacity-25 d-none d-xl-inline">Boolean
+                                        web app</span>
+                                    <span
+                                          class="badge rounded-pill small text-bg-dark bg-opacity-25 d-none d-xl-inline">Boolean
+                                        blog app</span>
+                                </div>
+
+                                <div class="py-3 py-md-3 pt-md-3 order-md-1 col-md-4 col-lg-4">
+                                    <div>
+                                        <p>Studenti online negli ultimi 30 minuti</p>
+                                        <p class="h1">125</p>
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
                 </div>
             </div>
-            <section class="contaiber-fluid mt-3 ms-1">
+            <section class="contaiber-fluid py-4">
                 <div class="row">
                     <div class="col-12 col-lg-8">
                         <div class="card">
@@ -37,7 +139,7 @@
                                 <h3>Prossime classi</h3>
                             </div>
 
-                            <table class="table">
+                            <table class="table table-hover small">
                                 <thead>
                                     <tr class="text-center">
                                         <th scope="col" class="text-start">Nome</th>
@@ -57,7 +159,9 @@
                                         </th>
                                         <td>15 feb 2021</td>
                                         <td>20%</td>
-                                        <td><p class="badge text-bg-success">Done</p></td>
+                                        <td>
+                                            <p class="badge text-bg-success">Done</p>
+                                        </td>
                                         <td>
                                             <button class="btn btn-sm btn-outline-secondary" type="button">
                                                 <i class="fa-solid fa-pencil"></i>
@@ -75,7 +179,9 @@
                                         </th>
                                         <td>16 feb 2021</td>
                                         <td>20%</td>
-                                        <td><p class="badge text-bg-success">Done</p></td>
+                                        <td>
+                                            <p class="badge text-bg-success">Done</p>
+                                        </td>
                                         <td>
                                             <button class="btn btn-sm btn-outline-secondary" type="button">
                                                 <i class="fa-solid fa-pencil"></i>
@@ -93,7 +199,9 @@
                                         </th>
                                         <td>17 feb 2021</td>
                                         <td>20%</td>
-                                        <td><p class="badge text-bg-warning text-white">process</p></td>
+                                        <td>
+                                            <p class="badge text-bg-warning text-white">process</p>
+                                        </td>
                                         <td>
                                             <button class="btn btn-sm btn-outline-secondary" type="button">
                                                 <i class="fa-solid fa-pencil"></i>
@@ -111,7 +219,9 @@
                                         </th>
                                         <td>18 feb 2021</td>
                                         <td>20%</td>
-                                        <td><p class="badge text-bg-success">Done</p></td>
+                                        <td>
+                                            <p class="badge text-bg-success">Done</p>
+                                        </td>
                                         <td>
                                             <button class="btn btn-sm btn-outline-secondary" type="button">
                                                 <i class="fa-solid fa-pencil"></i>
@@ -129,7 +239,9 @@
                                         </th>
                                         <td>19 feb 2021</td>
                                         <td>20%</td>
-                                        <td><p class="badge text-bg-danger">failed</p></td>
+                                        <td>
+                                            <p class="badge text-bg-danger">failed</p>
+                                        </td>
                                         <td>
                                             <button class="btn btn-sm btn-outline-secondary" type="button">
                                                 <i class="fa-solid fa-pencil"></i>
@@ -147,7 +259,9 @@
                                         </th>
                                         <td>20 feb 2021</td>
                                         <td>20%</td>
-                                        <td><p class="badge text-bg-success">Done</p></td>
+                                        <td>
+                                            <p class="badge text-bg-success">Done</p>
+                                        </td>
                                         <td>
                                             <button class="btn btn-sm btn-outline-secondary" type="button">
                                                 <i class="fa-solid fa-pencil"></i>
@@ -165,7 +279,9 @@
                                         </th>
                                         <td>21 feb 2021</td>
                                         <td>20%</td>
-                                        <td><p class="badge text-bg-danger">failed</p></td>
+                                        <td>
+                                            <p class="badge text-bg-danger">failed</p>
+                                        </td>
                                         <td>
                                             <button class="btn btn-sm btn-outline-secondary" type="button">
                                                 <i class="fa-solid fa-pencil"></i>
@@ -183,9 +299,11 @@
                                         </th>
                                         <td>22 feb 2021</td>
                                         <td>20%</td>
-                                        <td><p class="badge text-bg-success">Done</p></td>
                                         <td>
-                                             <button class="btn btn-sm btn-outline-secondary" type="button">
+                                            <p class="badge text-bg-success">Done</p>
+                                        </td>
+                                        <td>
+                                            <button class="btn btn-sm btn-outline-secondary" type="button">
                                                 <i class="fa-solid fa-pencil"></i>
                                             </button>
                                             <button class="btn btn-sm btn-outline-secondary" type="button">
@@ -202,7 +320,7 @@
                                 <h3>F.A.Q</h3>
                             </div>
 
-                            <div class="accordion" id="accordionExample">
+                            <div class="accordion small" id="accordionExample">
                                 <div class="accordion-item">
                                     <h2 class="accordion-header" id="headingOne">
                                         <button class="accordion-button" type="button" data-bs-toggle="collapse"
@@ -254,7 +372,7 @@
                         </div>
                     </div>
                     <div class="col-12 col-lg-4 g-0">
-                        <div class="card">
+                        <div class="card small">
                             <div class="card-header">
                                 <h3>Todo</h3>
                             </div>
