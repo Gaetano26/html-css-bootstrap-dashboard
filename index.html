@@ -86,13 +86,13 @@
                         <div class="col-12">
                             <div class="row justify-content-lg-between align-items-start">
                                 <div class="pt-4 pt-md-3 fs-4 align-items-center gap-4 order-md-2 col-12 col-md-3 col-lg-3">
-                                    <div class="d-flex align-items-center gap-3 small">
+                                    <div class="d-flex align-items-center gap-3 small text-nowrap">
                                         <p class="small m-0 new-student">Nuovo Studente</p>
                                         <button class="btn btn-lg btn-outline-light" data-bs-toggle="offcanvas"
                                             data-bs-target="#offcanvas" aria-controls="offcanvas">
                                             <i class="fa-solid fa-plus"></i>
                                         </button>
-                                        <div class="offcanvas offcanvas-end w-50" tabindex="-1" id="offcanvas" aria-labelledby="offcanvas">
+                                        <div class="offcanvas offcanvas-end w-50 small" tabindex="-1" id="offcanvas" aria-labelledby="offcanvas">
                                             <div class="offcanvas-header">
                                                 <h5 class="offcanvas-title" id="offcanvas2">Inserisci un nuovo studente
                                                 </h5>
@@ -102,23 +102,71 @@
                                             <div class="offcanvas-body">
                                                 <div class="container-fluid">
                                                     <div class="row">
-                                                        <div class="col-6">
-                                                            <div>
-                                                                <h6>Nome</h6>
-                                                                <input class="w-100" type="text">
+                                                        <form class="row g-2">
+                                                            <div class="col-md-6">
+                                                              <label for="input-Name" class="form-label">Name</label>
+                                                              <input type="text" class="form-control" id="input-Name">
+                                                              <h5 class="fw-normal mt-1">Email</h5>
+                                                              <label class="visually-hidden" for="autoSizingInputGroup">email</label>
+                                                                <div class="input-group">
+                                                                  <div class="input-group-text">@</div>
+                                                                  <input type="text" class="form-control" id="autoSizingInputGroup">
+                                                                </div>
+                                                                <h5 class="fw-normal mt-1">Iindirizzo Email</h5>
+                                                                <label class="visually-hidden" for="autoSizingInputGroup">email</label>
+                                                                  <div class="input-group">
+                                                                    <div class="input-group-text">@</div>
+                                                                    <input type="text" class="form-control" id="autoSizingInputGroup">
+                                                                  </div>
                                                             </div>
-                                                            <div>
-                                                                <h6>E-mail</h6>
-                                                               
+                                                             <div class="col-md-6">
+                                                              <label for="input-Cognome" class="form-label">Cognome</label>
+                                                              <input type="text" class="form-control" id="inputPassword4">
+                                                              <label for="input-Password" class="form-label">Password</label>
+                                                              <input type="text" class="form-control" id="inputPassword4">
+                                                              <label for="input-Password" class="form-label">Password</label>
+                                                              <input type="text" class="form-control" id="inputPassword4">
                                                             </div>
-
-                                                        </div>
-                                                        <div class="col-6">
-                                                            <div>
-                                                                <h6>Cognome</h6>
-                                                                <input type="text">
+                                                            <div class="col-12">
+                                                              <label for="inputAddress" class="form-label">Indirizzo</label>
+                                                              <input type="text" class="form-control" id="inputAddress">
                                                             </div>
-                                                        </div>
+                                                            <div class="col-md-6">
+                                                              <label for="inputCity" class="form-label">Città</label>
+                                                              <input type="text" class="form-control" id="inputCity">
+                                                            </div>
+                                                            <div class="col-md-4">
+                                                              <label for="inputState" class="form-label">Stato</label>
+                                                              <select id="inputState" class="form-select">
+                                                                <option selected>Scegli...</option>
+                                                                <option>...</option>
+                                                              </select>
+                                                            </div>
+                                                            <div class="col-md-2">
+                                                              <label for="inputZip" class="form-label">Cap</label>
+                                                              <input type="text" class="form-control" id="inputZip">
+                                                            </div>
+                                                            <div class="col-12">
+                                                                <h5 class="fw-normal mt-1">Foto</h5>
+                                                                <label class="visually-hidden" for="autoSizingInputGroup">Nessun file Selezionato</label>
+                                                                  <div class="input-group">
+                                                                    <div class="input-group-text">Scegli file</div>
+                                                                    <input type="text" class="form-control" id="autoSizingInputGroup" placeholder="nessun file selezionato">
+                                                                  </div>
+                                                              </div>
+                                                            <div class="col-12">
+                                                              <div class="form-check">
+                                                                <input class="form-check-input" type="checkbox" id="gridCheck">
+                                                                <label class="form-check-label" for="gridCheck">
+                                                                  Seleziona per proseguire
+                                                                </label>
+                                                              </div>
+                                                            </div>
+                                                            <div class="col-12">
+                                                              <button type="submit" class="btn btn-primary">Salva</button>
+                                                              <button type="submit" class="btn btn-warning">Svuota</button>
+                                                            </div>
+                                                          </form>
 
                                                     </div>
                                                 </div>
@@ -172,7 +220,7 @@
                                 <h3>Prossime classi</h3>
                             </div>
 
-                            <table class="table table-hover small">
+                            <table class="table table-hover small text-nowrap">
                                 <thead>
                                     <tr class="text-center">
                                         <th scope="col" class="text-start">Nome</th>
