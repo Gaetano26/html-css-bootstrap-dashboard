@@ -85,49 +85,82 @@
                     <div class="row w-100 pb-md-2 pb-lg-1">
                         <div class="col-12">
                             <div class="row justify-content-lg-between align-items-start">
-                                <div
-                                     class="pt-4 pt-md-3 fs-4 align-items-center gap-4 order-md-2 col-12 col-md-3 col-lg-3">
+                                <div class="pt-4 pt-md-3 fs-4 align-items-center gap-4 order-md-2 col-12 col-md-3 col-lg-3">
                                     <div class="d-flex align-items-center gap-3 small">
                                         <p class="small m-0 new-student">Nuovo Studente</p>
                                         <button class="btn btn-lg btn-outline-light" data-bs-toggle="offcanvas"
-                                                data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">
+                                            data-bs-target="#offcanvas" aria-controls="offcanvas">
                                             <i class="fa-solid fa-plus"></i>
                                         </button>
-                                    </div>
+                                        <div class="offcanvas offcanvas-end w-50" tabindex="-1" id="offcanvas" aria-labelledby="offcanvas">
+                                            <div class="offcanvas-header">
+                                                <h5 class="offcanvas-title" id="offcanvas2">Inserisci un nuovo studente
+                                                </h5>
+                                                <button type="button" class="btn-close" data-bs-dismiss="offcanvas"
+                                                    aria-label="Close"></button>
+                                            </div>
+                                            <div class="offcanvas-body">
+                                                <div class="container-fluid">
+                                                    <div class="row">
+                                                        <div class="col-6">
+                                                            <div>
+                                                                <h6>Nome</h6>
+                                                                <input class="w-100" type="text">
+                                                            </div>
+                                                            <div>
+                                                                <h6>E-mail</h6>
+                                                               
+                                                            </div>
 
+                                                        </div>
+                                                        <div class="col-6">
+                                                            <div>
+                                                                <h6>Cognome</h6>
+                                                                <input type="text">
+                                                            </div>
+                                                        </div>
+
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
                                 <div class="pt-4 pt-md-3 order-md-0 col-md-4 col-lg-5">
 
-                                    <h1>Boolean<span class="badge rounded-pill piccolo text-bg-dark bg-opacity-25">Piano
-                                            blaze</span></h1>
-                                    <span class="badge rounded-pill text-bg-dark small bg-opacity-25">3 app</span>
-                                    <i class="fa-solid fa-angles-right"></i>
-                                    <span class="badge rounded-pill text-bg-dark small bg-opacity-25 d-lg-none">
-                                        <i class="fa-solid fa-plus"></i>
-                                    </span>
-                                    <span
-                                          class="badge rounded-pill small text-bg-dark bg-opacity-25 d-none d-xl-inline">Boolean
-                                        mobile app</span>
-                                    <span
-                                          class="badge small rounded-pill text-bg-dark bg-opacity-25 d-none d-xl-inline">Boolean
-                                        web app</span>
-                                    <span
-                                          class="badge rounded-pill small text-bg-dark bg-opacity-25 d-none d-xl-inline">Boolean
-                                        blog app</span>
+                                            <h1>Boolean<span
+                                                    class="badge rounded-pill piccolo text-bg-dark bg-opacity-25">Piano
+                                                    blaze</span></h1>
+                                            <span class="badge rounded-pill text-bg-dark small bg-opacity-25">3
+                                                app</span>
+                                            <i class="fa-solid fa-angles-right"></i>
+                                            <span class="badge rounded-pill text-bg-dark small bg-opacity-25 d-lg-none">
+                                                <i class="fa-solid fa-plus"></i>
+                                            </span>
+                                            <span
+                                                class="badge rounded-pill small text-bg-dark bg-opacity-25 d-none d-xl-inline">Boolean
+                                                mobile app</span>
+                                            <span
+                                                class="badge small rounded-pill text-bg-dark bg-opacity-25 d-none d-xl-inline">Boolean
+                                                web app</span>
+                                            <span
+                                                class="badge rounded-pill small text-bg-dark bg-opacity-25 d-none d-xl-inline">Boolean
+                                                blog app</span>
+                                    
                                 </div>
-
                                 <div class="py-3 py-md-3 pt-md-3 order-md-1 col-md-4 col-lg-4">
-                                    <div>
-                                        <p>Studenti online negli ultimi 30 minuti</p>
-                                        <p class="h1">125</p>
-                                    </div>
+                                            <div>
+                                                <p>Studenti online negli ultimi 30 minuti</p>
+                                                <p class="h1">125</p>
+                                            </div>
 
+                                     
+                                   
                                 </div>
 
                             </div>
 
                         </div>
-
                     </div>
                 </div>
             </div>
@@ -332,7 +365,8 @@
                                     <div id="collapseOne" class="accordion-collapse collapse show"
                                         aria-labelledby="headingOne" data-bs-parent="#accordionExample">
                                         <div class="accordion-body">
-                                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Error, officiis?
+                                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Error,
+                                            officiis?
                                         </div>
                                     </div>
                                 </div>
